@@ -1,3 +1,7 @@
-export function App() {
-  return <h1 className="text-3xl font-bold">JeriLifeTur</h1>;
+import Header from "./components/header";
+
+function App() {
+  return <Header />;
 }
+
+export default App;
