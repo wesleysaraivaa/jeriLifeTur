@@ -1,65 +1,60 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Alan Sans", sans-serif;
+  background-color: #f5f5f5;
+}
+
 @font-face {
   font-family: "Alan Sans";
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
   src: url("./assets/fonts/Alan_Sans/AlanSans-VariableFont_wght.ttf")
-    format("truetype");
+    format("truetype-variations");
 }
 
 @font-face {
-  font-family: "Alan Sans Regular ";
+  font-family: "Caesar Dressing";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./assets/fonts/Alan_Sans/AlanSans-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Alan Sans Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("./assets/fonts/Alan_Sans/AlanSans-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Alan Sans SemiBold";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("./assets/fonts/Alan_Sans/AlanSans-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Alan Sans Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("./assets/fonts/Alan_Sans/AlanSans-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Caesar Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("./assets/fonts/Caesar_Regular/Caesar-Regular.ttf")
+  src: url("./assets/fonts/Caesar_Dressing/CaesarDressing-Regular.ttf")
     format("truetype");
 }
 
 @theme {
-  --color-blue: #125eb7;
-  --color-gray: #242424;
-  --color-black: #000000;
-  --color-white: #ffffff;
-
-  --font-Alan-Sans: "Alan Sans", sans-serif;
-  --font-Alan-Sans-Regular: "Alan Sans Regular", sans-serif;
-  --font-Alan-Sans-Medium: "Alan Sans Medium", sans-serif;
-  --font-Alan-Sans-SemiBold: "Alan Sans SemiBold", sans-serif;
-  --font-Alan-Sans-Bold: "Alan Sans Bold", sans-serif;
-  --font-Caesar-Regular: "Caesar Regular", serif;
+  --color-custom-blue: #125eb7;
+  --color-custom-blue-light: #419aff;
+  --color-custom-gray: #242424;
+  --color-custom-black: #000000;
+  --color-custom-white: #ffffff;
 }
+
+@layer utilities {
+  .font-alan-sans-bold {
+    font-family: "Alan Sans", sans-serif;
+    font-weight: 700;
+  }
+  .font-alan-sans-semibold {
+    font-family: "Alan Sans", sans-serif;
+    font-weight: 600;
+  }
+  .font-alan-sans-medium {
+    font-family: "Alan Sans", sans-serif;
+    font-weight: 500;
+  }
+  .font-alan-sans-regular {
+    font-family: "Alan Sans", sans-serif;
+    font-weight: 400;
+  }
+  .font-caesar-regular {
+    font-family: "Caesar Dressing", serif;
+  }
+}
+
+/* Cores customizadas disponíveis via Tailwind */
+/* --color-blue: #125eb7; */
+/* --color-gray: #242424; */
+/* --color-black: #000000; */
+/* --color-white: #ffffff; */
