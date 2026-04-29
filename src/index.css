@@ -31,6 +31,25 @@ body {
   --color-custom-white: #ffffff;
 }
 
+@utility container {
+  margin-inline: auto; /* Equivale a center: true */
+  padding-inline: 1rem; /* Equivale a padding DEFAULT: 1rem */
+
+  /* Substituições para cada breakpoint */
+  @media (width >= theme(--breakpoint-sm)) {
+    padding-inline: 2rem;
+  }
+  @media (width >= theme(--breakpoint-lg)) {
+    padding-inline: 4rem;
+  }
+  @media (width >= theme(--breakpoint-xl)) {
+    padding-inline: 5rem;
+  }
+  @media (width >= theme(--breakpoint-2xl)) {
+    padding-inline: 6rem;
+  }
+}
+
 @layer utilities {
   .font-alan-sans-bold {
     font-family: "Alan Sans", sans-serif;
