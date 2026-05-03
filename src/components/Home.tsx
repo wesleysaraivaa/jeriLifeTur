@@ -6,7 +6,7 @@ export function Home() {
   return (
     <section className="relative overflow-hidden bg-[url('./assets/images/PRAIA.png')] bg-cover bg-center rounded-b-7xl rounded-b-[60px] shadow-2xl">
       <div className="container mx-auto px-4 py-8 h-162.5 md:h-187.5 relative">
-        <div className="fixed md:w-90 -left-40 top-30 w-75 z-10 rotate-3">
+        <div className="absolute md:w-110 -left-50 top-25 w-75 z-10 rotate-1">
           <img src={PLACASHERO} alt=" buggy Jericoacoara" />
         </div>
         <div className="relative top-15 z-20 flex h-full items-center">
