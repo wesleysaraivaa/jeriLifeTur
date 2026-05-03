@@ -1,9 +1,13 @@
 import logo from "../assets/images/LOGO.png";
 import NavItem from "./navItem";
 import type { NavItemInterface } from "./navItem";
-import { CalendarDays, Menu } from "lucide-react";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendarDays,
+  faBarsStaggered,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const itens: NavItemInterface[] = [
@@ -38,12 +42,12 @@ export default function Navbar() {
               </span>
 
               <div className="grid h-10 w-10 place-items-center rounded-full bg-custom-blue-light text-white">
-                <CalendarDays size={20} />
+                <FontAwesomeIcon icon={faCalendarDays} />
               </div>
             </button>
           </div>
           <div className="md:hidden" onClick={() => setOpen(!open)}>
-            <Menu size={24} className="text-4xl" />
+            <FontAwesomeIcon icon={faBarsStaggered} />
           </div>
         </div>
       </nav>

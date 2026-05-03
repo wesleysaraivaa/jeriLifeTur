@@ -1,6 +1,7 @@
 import PLACASHERO from "../assets/images/PLACAS-HERO.png";
 import BUGGYCASALHERO from "../assets/images/BUGGY-CASAL-HERO.png";
-import { MoveUpRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Home() {
   return (
@@ -32,13 +33,13 @@ export function Home() {
                 </span>
 
                 <div className="grid h-10 w-10 place-items-center rounded-full bg-custom-blue-light text-white">
-                  <MoveUpRight size={20} />
+                  <FontAwesomeIcon icon={faArrowRight} />
                 </div>
               </button>
 
               <button className="inline-flex items-center gap-3 rounded-full border border-white px-5 py-2 shadow-xl font-alan-sans-medium text-white">
                 Agendar Passeio
-                <MoveUpRight size={20} />
+                <FontAwesomeIcon icon={faArrowRight} />
               </button>
             </div>
           </div>
