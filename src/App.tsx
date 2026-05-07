@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import { Home } from "./components/Home";
+import { Hero } from "./components/Hero";
 import { TourLeste } from "./components/TourLeste";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Hero />
       <TourLeste />
     </>
   );

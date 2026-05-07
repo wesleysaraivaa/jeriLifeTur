@@ -20,7 +20,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-20 top-6 z-50 px-4">
+    <header className="fixed md:inset-x-20 inset-x-10 top-6 z-50 md:px-4">
       <nav className=" md:rounded-full rounded-3xl bg-custom-white/95 shadow-2xl backdrop-blur-md border border-slate-200">
         <div className="flex items-center justify-between px-6 py-2">
           <div>

@@ -3,16 +3,16 @@ import BUGGYCASALHERO from "../assets/images/BUGGY-CASAL-HERO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export function Home() {
+export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[url('./assets/images/PRAIA.png')] bg-cover bg-center rounded-b-7xl rounded-b-[60px] shadow-2xl">
-      <div className="container mx-auto px-4 py-8 h-162.5 md:h-187.5 relative">
-        <div className="absolute md:w-110 -left-50 top-25 w-75 z-10 rotate-1">
+    <section className="relative overflow-hidden bg-[url('./assets/images/PEDRA-FURADA-HERO.png')] bg-cover bg-center rounded-b-7xl rounded-b-[60px] shadow-2xl">
+      <div className="container mx-auto px-4 py-8 h-162.5 md:h-250">
+        <div className="absolute md:w-120  -left-40 md:top-60 top-30 w-80 z-10 rotate-1">
           <img src={PLACASHERO} alt=" buggy Jericoacoara" />
         </div>
         <div className="relative top-15 z-20 flex h-full items-center">
-          <div className="max-w-2xl ml-2 md:ml-30">
-            <div className="rounded-3xl p-8 md:p-10 backdrop-blur-sm border border-white/20 shadow-2xl">
+          <div className="flex flex-col max-w-2xl  md:ml-20 ">
+            <div className="flex flex-col rounded-3xl p-8 backdrop-blur-sm border border-white/20 shadow-2xl">
               <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                 Descubra{" "}
                 <span className="font-caesar-regular">Jericoacoara</span>
@@ -26,7 +26,7 @@ export function Home() {
                 atendimento real.
               </p>
             </div>
-            <div className="mt-8 flex flex-wrap md:flex-nowrap gap-4">
+            <div className="mt-8 flex md:justify-normal gap-4 justify-between">
               <button className="group inline-flex items-center gap-3 rounded-full bg-white px-2 py-2 shadow-xl transition-all duration-300 hover:scale-105">
                 <span className="pl-4 text-black font-alan-sans-medium">
                   Agendar Passeio
@@ -44,10 +44,11 @@ export function Home() {
             </div>
           </div>
         </div>
-        <div className=" md:w-300 -right-80 -bottom-5 w-300 z-100 hidden md:absolute md:block">
+        <div className="md:w-300 -right-60 -bottom-5 w-300 z-10 hidden md:absolute md:block rotate-1">
           <img
             src={BUGGYCASALHERO}
             alt="Colorful buggy for sale in Jericoacoara"
+            className="flex"
           />
         </div>
       </div>
