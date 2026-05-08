@@ -1,22 +1,23 @@
-import LagoaDoParaiso from "../assets/images/Lagoa-Do-Paraiso.png";
-import LagoaAzul from "../assets/images/Lagoa-Azul.png";
-import ArvoredaPreguica from "../assets/images/Arvore-da-Preguica.png";
-import PedraFurada from "../assets/images/Pedra-Furada.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import MangueSeco from "../assets/images/Mangue-Seco.png";
+import LagoadaTatajuba from "../assets/images/Lagoa-da-Tatajuba.png";
+import DunasMoveis from "../assets/images/Dunas-Moveis.png";
+import VilarejosRusticos from "../assets/images/Vilarejos-Rusticos.png";
 
-export function TourLeste() {
+export function TourOeste() {
   return (
     <section className="container gap-20 mx-auto px-4 py-16">
       <div className="flex items-center gap-4 m-10 flex-col">
         <h1 className="font-caesar-regular text-custom-blue text-5xl text-center md:text-8xl">
-          Tours Lado Leste
+          Tour lado Oeste
         </h1>
         <p className="text-custom-gray text-base text-center font-bold md:text-md lg:text-lg">
-          No lado leste do Parque Nacional você encontra as lagoas mais
-          cristalinas. Roteiros típicos incluem:
+          Para quem busca aventura, o lado oeste traz contato com a natureza e
+          cultura local:
         </p>
       </div>
+
       <div className="flex items-start flex-col gap-20 justify-center md:grid md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
@@ -26,14 +27,15 @@ export function TourLeste() {
           </div>
           <div className="flex flex-col items-center">
             <img
-              src={LagoaDoParaiso}
-              alt="Lagoa do Paraíso"
+              src={MangueSeco}
+              alt=""
               className="h-90 w-90 object-cover rounded-2xl shadow-lg"
             />
-            <h2 className="font-bold text-2xl m-3"> Lagoa do Paraíso </h2>
+            <h2 className="font-bold text-2xl m-3"> Mangue Seco </h2>
             <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-              Famosa por suas águas cristalinas e redes submersas,
-              proporcionando um cenário paradisíaco para os visitantes.
+              O local é famoso por sua paisagem exótica de árvores de mangue que
+              secaram devido ao avanço do mar e da areia, criando um cenário de
+              raízes expostas e retorcidas que rendem fotos únicas.
             </p>
           </div>
         </div>
@@ -46,14 +48,15 @@ export function TourLeste() {
           </div>
           <div className="flex flex-col items-center">
             <img
-              src={LagoaAzul}
-              alt="Lagoa Azul"
-              className=" h-90 w-90 object-cover rounded-2xl shadow-lg"
+              src={LagoadaTatajuba}
+              alt=""
+              className="h-90 w-90 object-cover rounded-2xl shadow-lg"
             />
-            <h2 className="font-bold text-2xl m-3"> Lagoa Azul </h2>
+            <h2 className="font-bold text-2xl m-3"> Lagoa da Tatajuba </h2>
             <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-              Conhecida por sua profundidade e cores intensas, a Lagoa Azul
-              oferece uma experiência única para os entusiastas de natureza.
+              O local é famoso por suas águas calmas e quentes, cercadas por
+              dunas móveis e manguezais, oferecendo o cenário clássico das redes
+              dentro da água para relaxar.
             </p>
           </div>
         </div>
@@ -66,35 +69,35 @@ export function TourLeste() {
           </div>
           <div className="flex flex-col items-center">
             <img
-              src={ArvoredaPreguica}
-              alt="Árvore da Preguiça"
-              className=" h-90 w-90 object-cover rounded-2xl shadow-lg"
+              src={DunasMoveis}
+              alt=""
+              className="h-90 w-90 object-cover rounded-2xl shadow-lg"
             />
-            <h2 className="font-bold text-2xl m-3"> Árvore da Preguiça </h2>
+            <h2 className="font-bold text-2xl m-3"> Dunas Móveis </h2>
             <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-              Uma árvore icônica que se destaca por sua forma única, oferecendo
-              um cenário fotogênico e uma experiência de conexão com a natureza.
+              Elas formam um campo de dunas brancas que mudam constantemente de
+              lugar devido à força dos ventos alísios, criando o cenário
+              perfeito para os famosos passeios de buggy "com emoção".
             </p>
           </div>
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light ">
+          <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
             {[...Array(5)].map((_, index) => (
               <FontAwesomeIcon key={index} icon={faStar} />
             ))}
           </div>
           <div className="flex flex-col items-center">
             <img
-              src={PedraFurada}
-              alt="Pedra Furada"
-              className=" h-90 w-90 object-cover rounded-2xl shadow-lg"
+              src={VilarejosRusticos}
+              alt=""
+              className="h-90 w-90 object-cover rounded-2xl shadow-lg"
             />
-            <h2 className="font-bold text-2xl m-3"> Pedra Furada </h2>
+            <h2 className="font-bold text-2xl m-3"> Vilarejos Rusticos </h2>
             <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-              Um dos cartões-postais de Jericoacoara, a Pedra Furada é uma
-              formação rochosa com um arco natural, proporcionando um cenário
-              impressionante para os visitantes.
+              Preservam a essência rústica de comunidades de pescadores, com
+              ruas de areia e pousadas sustentáveis integradas à natureza.
             </p>
           </div>
         </div>
