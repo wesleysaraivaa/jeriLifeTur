@@ -9,7 +9,7 @@ import LadoOesteBg from "../assets/images/lado-Oeste.png";
 export function TourOeste() {
   return (
     <div className="relative">
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center -scale-y-100"
         style={{ backgroundImage: `url(${LadoOesteBg})` }}
       />
