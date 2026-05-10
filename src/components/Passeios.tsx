@@ -5,16 +5,18 @@ import ARROWPASSEIOS from "../assets/images/arrow-passeios.png";
 
 export function Passeios() {
   return (
-    <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center ">
-      <div className="w-100% h-11 bg-blue-800 flex items-center justify-center overflow-hidden ">
-        <img src={ARROWPASSEIOS} alt="" className="max-w-full" />
+    <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center bg-[#07356B]">
+      <div className="relative h-4 w-full flex items-center justify-center z-20">
+        <div className="absolute top-0 -translate-y-1/2 w-full flex justify-center">
+          <img src={ARROWPASSEIOS} alt="" className="h-12 md:h-16 w-auto" />
+        </div>
       </div>
-      <div className="container mx-auto px-4 py-16 ">
-        <h1 className="text-4xl mt-10 mb-20 text-center">
+      <div className="container mx-auto px-4 py-16">
+        <h1 className="text-5xl mt-10 mb-20 text-center text-white">
           <span className="font-bold">Oferecemos passeios privativos </span>
           ou compartilhados em:
         </h1>
-        <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center gap-16 mt-10">
+        <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-between gap-16 mt-10">
           <div className="relative bg-custom-blue-light rounded-2xl flex w-110 h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
