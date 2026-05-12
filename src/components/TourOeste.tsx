@@ -7,6 +7,32 @@ import VilarejosRusticos from "../assets/images/Vilarejos-Rusticos.png";
 import LadoOesteBg from "../assets/images/lado-Oeste.png";
 
 export function TourOeste() {
+  const ToursOeste = [
+    {
+      titulo: "Mangue Seco",
+      descricao:
+        "O local é famoso por sua paisagem exótica de árvores de mangue que secaram devido ao avanço do mar e da areia, criando um cenário de raízes expostas e retorcidas que rendem fotos únicas.",
+      foto: MangueSeco,
+    },
+    {
+      titulo: "Lagoa da Tatajuba ",
+      descricao:
+        "O local é famoso por suas águas calmas e quentes, cercadas por dunas móveis e manguezais, oferecendo o cenário clássico das redes dentro da água para relaxar.",
+      foto: LagoadaTatajuba,
+    },
+    {
+      titulo: "Dunas Móveis",
+      descricao:
+        "Elas formam um campo de dunas brancas que mudam constantemente de lugar devido à força dos ventos alísios, criando o cenário perfeito para os famosos passeios de buggy com emoção.",
+      foto: DunasMoveis,
+    },
+    {
+      titulo: "Vilarejos Rusticos ",
+      descricao:
+        "Preservam a essência rústica de comunidades de pescadores, com ruas de areia e pousadas sustentáveis integradas à natureza.",
+      foto: VilarejosRusticos,
+    },
+  ];
   return (
     <div className="relative">
       <div
@@ -25,88 +51,26 @@ export function TourOeste() {
         </div>
 
         <div className="flex items-start flex-col gap-20 justify-center md:grid md:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
-              {[...Array(5)].map((_, index) => (
-                <FontAwesomeIcon key={index} icon={faStar} />
-              ))}
+          {ToursOeste.map((tour, index) => (
+            <div className="flex flex-col items-center" key={index}>
+              <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
+                {[...Array(5)].map((_, i) => (
+                  <FontAwesomeIcon key={i} icon={faStar} />
+                ))}
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src={tour.foto}
+                  alt={tour.titulo}
+                  className="h-90 w-90 object-cover rounded-2xl shadow-lg "
+                />
+                <h2 className="font-bold text-2xl m-3 ">{tour.titulo}</h2>
+                <p className="text-base text-custom-gray max-w-xl text-balance text-center  md:text-normal md:text-lg">
+                  {tour.descricao}
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col items-center">
-              <img
-                src={MangueSeco}
-                alt=""
-                className="h-90 w-90 object-cover rounded-2xl shadow-lg"
-              />
-              <h2 className="font-bold text-2xl m-3"> Mangue Seco </h2>
-              <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-                O local é famoso por sua paisagem exótica de árvores de mangue
-                que secaram devido ao avanço do mar e da areia, criando um
-                cenário de raízes expostas e retorcidas que rendem fotos únicas.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
-              {[...Array(5)].map((_, index) => (
-                <FontAwesomeIcon key={index} icon={faStar} />
-              ))}
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src={LagoadaTatajuba}
-                alt=""
-                className="h-90 w-90 object-cover rounded-2xl shadow-lg"
-              />
-              <h2 className="font-bold text-2xl m-3"> Lagoa da Tatajuba </h2>
-              <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-                O local é famoso por suas águas calmas e quentes, cercadas por
-                dunas móveis e manguezais, oferecendo o cenário clássico das
-                redes dentro da água para relaxar.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
-              {[...Array(5)].map((_, index) => (
-                <FontAwesomeIcon key={index} icon={faStar} />
-              ))}
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src={DunasMoveis}
-                alt=""
-                className="h-90 w-90 object-cover rounded-2xl shadow-lg"
-              />
-              <h2 className="font-bold text-2xl m-3"> Dunas Móveis </h2>
-              <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-                Elas formam um campo de dunas brancas que mudam constantemente
-                de lugar devido à força dos ventos alísios, criando o cenário
-                perfeito para os famosos passeios de buggy "com emoção".
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-1 justify-center mb-2 text-custom-blue-light">
-              {[...Array(5)].map((_, index) => (
-                <FontAwesomeIcon key={index} icon={faStar} />
-              ))}
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src={VilarejosRusticos}
-                alt=""
-                className="h-90 w-90 object-cover rounded-2xl shadow-lg"
-              />
-              <h2 className="font-bold text-2xl m-3"> Vilarejos Rusticos </h2>
-              <p className="text-base text-custom-gray max-w-xl text-balance text-center md:text-lg">
-                Preservam a essência rústica de comunidades de pescadores, com
-                ruas de areia e pousadas sustentáveis integradas à natureza.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </div>
