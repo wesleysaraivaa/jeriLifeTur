@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[url('./assets/images/PEDRA-FURADA-HERO.png')] bg-cover bg-center rounded-b-7xl rounded-b-[60px] shadow-2xl">
+    <section className="relative overflow-hidden bg-[url('./assets/images/PEDRA-FURADA-HERO.png')] bg-cover bg-center rounded-b-[60px] shadow-2xl">
       <div className="container mx-auto px-4 py-8 h-162.5 md:h-250">
         <div className="absolute md:w-120  -left-40 md:top-60 top-30 w-80 z-10 rotate-1">
           <img src={PLACASHERO} alt=" buggy Jericoacoara" />

@@ -4,6 +4,7 @@ import { TourLeste } from "./components/TourLeste";
 import { TourOeste } from "./components/TourOeste";
 import { Passeios } from "./components/Passeios";
 import { Sobre } from "./components/Sobre";
+import { SobreJeri } from "./components/SobreJeri";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TourOeste />
       <Passeios />
       <Sobre />
+      <SobreJeri />
     </>
   );
 }
