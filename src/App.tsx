@@ -5,6 +5,7 @@ import { TourOeste } from "./components/TourOeste";
 import { Passeios } from "./components/Passeios";
 import { Sobre } from "./components/Sobre";
 import { SobreJeri } from "./components/SobreJeri";
+import { Contato } from "./components/Contato";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Passeios />
       <Sobre />
       <SobreJeri />
+      <Contato />
     </>
   );
 }

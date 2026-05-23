@@ -17,7 +17,7 @@ export function Passeios() {
           ou compartilhados em:
         </h1>
         <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-between gap-16 mt-10">
-          <div className="relative bg-custom-blue-light rounded-2xl flex w-110 h-20 items-center justify-start px-8 mb-4">
+          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
                 BUGGY
@@ -32,7 +32,7 @@ export function Passeios() {
               className="absolute z-20 bottom-0 right-4 w-44"
             />
           </div>
-          <div className="relative bg-custom-blue-light rounded-2xl flex w-110 h-20 items-center justify-start px-8 mb-4">
+          <div className="relative bg-custom-blue-light rounded-2xl flex w-90  h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
                 QUADRI
@@ -47,7 +47,7 @@ export function Passeios() {
               className="absolute z-20 bottom-0 right-4 w-44"
             />
           </div>
-          <div className="relative bg-custom-blue-light rounded-2xl flex w-110 h-20 items-center justify-start px-8 mb-4">
+          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
                 TRANSFER
