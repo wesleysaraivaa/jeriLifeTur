@@ -5,7 +5,7 @@ import PasseiosExclusivos from "../assets/images/Passeios-Exclusivos.png";
 export function Sobre() {
   return (
     <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center py-16 ">
-      <h1 className="font-caesar-regular text-custom-blue text-5xl text-center mb-12 md:text-8xl uppercase">
+      <h1 className="font-caesar-regular text-custom-blue text-5xl text-center mt-12 mb-20 md:text-8xl uppercase">
         Por que Jerilifetur?
       </h1>
 

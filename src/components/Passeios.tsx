@@ -16,8 +16,8 @@ export function Passeios() {
           <span className="font-bold">Oferecemos passeios privativos </span>
           ou compartilhados em:
         </h1>
-        <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-between gap-16 mt-10">
-          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 h-20 items-center justify-start px-8 mb-4">
+        <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center gap-10 md:gap-16 mt-10">
+          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 md:w-110 h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
                 BUGGY
@@ -32,7 +32,7 @@ export function Passeios() {
               className="absolute z-20 bottom-0 right-4 w-44"
             />
           </div>
-          <div className="relative bg-custom-blue-light rounded-2xl flex w-90  h-20 items-center justify-start px-8 mb-4">
+          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 md:w-110 h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
                 QUADRI
@@ -47,7 +47,7 @@ export function Passeios() {
               className="absolute z-20 bottom-0 right-4 w-44"
             />
           </div>
-          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 h-20 items-center justify-start px-8 mb-4">
+          <div className="relative bg-custom-blue-light rounded-2xl flex w-90 md:w-110 h-20 items-center justify-start px-8 mb-4">
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               <p className="absolute left-2 top-1/2 -translate-y-1/2 font-caesar-regular font-bold text-7xl text-custom-blue/20 pointer-events-none select-none">
                 TRANSFER
@@ -67,11 +67,11 @@ export function Passeios() {
 
       <div className="container mx-auto px-4 py-16 flex flex-col items-center gap-16">
         <div className="bg-[url('./assets/images/KiteTripseDownwind.png')] bg-cover bg-center w-full min-h-100 relative rounded-[50px] shadow-2xl overflow-hidden flex items-center justify-end p-6 md:p-12">
-          <div className="max-w-xl bg-custom-blue/40 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl text-white">
-            <h2 className="text-3xl md:text-5xl font-caesar-regular mb-4 leading-tight">
+          <div className="max-w-xl bg-black/30 md:bg-white/10 md:backdrop-blur-md p-8 rounded-3xl md:border md:border-white/20 md:shadow-2xl text-white">
+            <h2 className="text-3xl md:text-5xl font-caesar-regular mb-4 leading-tight drop-shadow-lg">
               KITE TRIPS E DOWNWIND
             </h2>
-            <p className="text-base md:text-lg font-medium leading-relaxed">
+            <p className="text-base md:text-lg font-medium leading-relaxed drop-shadow-md">
               Entre julho e janeiro, os ventos constantes fazem de Jericoacoara
               um dos melhores lugares do mundo para o kitesurf. Organizamos Kite
               Trips e downwinds com acompanhamento de profissionais, carro 4x4
@@ -81,11 +81,11 @@ export function Passeios() {
         </div>
 
         <div className="bg-[url('./assets/images/TransferseLogística.png')] bg-cover bg-center w-full min-h-100 relative rounded-[50px] shadow-2xl overflow-hidden flex items-center justify-end p-6 md:p-12">
-          <div className="max-w-xl bg-custom-blue/40 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl text-white">
-            <h2 className="text-3xl md:text-5xl font-caesar-regular mb-4 leading-tight">
+          <div className="max-w-xl bg-black/30 md:bg-white/10 md:backdrop-blur-md p-8 rounded-3xl md:border md:border-white/20 md:shadow-2xl text-white">
+            <h2 className="text-3xl md:text-5xl font-caesar-regular mb-4 leading-tight drop-shadow-lg">
               TRANSFERS E LOGÍSTICA
             </h2>
-            <p className="text-base md:text-lg font-medium leading-relaxed">
+            <p className="text-base md:text-lg font-medium leading-relaxed drop-shadow-md">
               Realizamos transfers em veículos 4x4 entre Fortaleza, o Aeroporto
               Regional de Jericoacoara (JJD) e a vila. Nossa equipe está
               disponível 24 horas para garantir conforto e segurança do início
