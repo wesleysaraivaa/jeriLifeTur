@@ -1,4 +1,4 @@
-import LagoaDoParaiso from "../assets/images/Lagoa-Do-Paraiso.png";
+import LagoaDoParaiso from "../assets/images/Lagoa-do-Paraiso.png";
 import LagoaAzul from "../assets/images/Lagoa-Azul.png";
 import ArvoredaPreguica from "../assets/images/Arvore-da-Preguica.png";
 import PedraFurada from "../assets/images/Pedra-Furada.png";
