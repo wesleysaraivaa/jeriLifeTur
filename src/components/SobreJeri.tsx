@@ -7,10 +7,10 @@ export function SobreJeri() {
     >
       <div className="container mx-auto px-4 pb-24 md:pb-32">
         <div className="w-full max-w-md sm:max-w-2xl md:max-w-2xl lg:max-w-4xl backdrop-blur-sm p-6 sm:p-10 md:p-12 rounded-[30px] md:rounded-[50px] border border-white/20 shadow-2xl text-white text-center mx-auto">
-          <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-caesar-regular mb-4 md:mb-6 leading-tight uppercase tracking-wider">
+          <h2 className="text-[clamp(1.5rem,5vw,3.75rem)] font-caesar-regular mb-4 md:mb-6 leading-tight uppercase tracking-wider">
             Jericoacoara além dos roteiros
           </h2>
-          <p className="text-sm sm:text-base md:text-base lg:text-xl font-medium leading-relaxed max-w-4xl mx-auto">
+          <p className="text-[clamp(0.875rem,2.5vw,1.25rem)] font-medium leading-relaxed max-w-4xl mx-auto">
             O Parque Nacional foi criado para proteger manguezais, dunas e
             lagunas. Suas dunas gigantes mudam de forma com o vento, e
             visitantes sobem à Duna do Pôr do Sol para ver o espetáculo. Durante

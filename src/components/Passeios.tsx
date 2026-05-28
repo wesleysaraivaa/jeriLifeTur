@@ -1,18 +1,16 @@
 import Buggy from "../assets/images/buggy.png";
 import Quadri from "../assets/images/quadri.png";
 import QuatroXQuatro from "../assets/images/4x4.png";
-import ARROWPASSEIOS from "../assets/images/arrow-passeios.png";
 
 export function Passeios() {
   return (
-    <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center bg-[#07356B]">
-      <div className="relative h-4 w-full flex items-center justify-center z-20">
-        <div className="absolute top-0 -translate-y-1/2 w-full flex justify-center">
-          <img src={ARROWPASSEIOS} alt="" className="h-12 md:h-16 w-auto" />
-        </div>
+    <section className="relative bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center">
+      <div className="absolute inset-0 bg-linear-to-r from-custom-blue/70 to-transparent"></div>
+      <div className="relative z-20 flex justify-center -mb-6">
+        <div className="w-0 h-0 border-l-40 border-l-transparent border-r-40 border-r-transparent border-t-40 md:border-l-60 md:border-r-60 md:border-t-60 border-t-custom-blue drop-shadow-lg"></div>
       </div>
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-5xl mt-10 mb-20 text-center text-white">
+      <div className="container mx-auto px-4 py-16 relative z-10">
+        <h1 className="text-5xl mt-10 mb-20 text-center text-white ">
           <span className="font-bold">Oferecemos passeios privativos </span>
           ou compartilhados em:
         </h1>
@@ -65,32 +63,41 @@ export function Passeios() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 flex flex-col items-center gap-16">
-        <div className="bg-[url('./assets/images/KiteTripseDownwind.png')] bg-cover bg-center w-full min-h-100 relative rounded-[50px] shadow-2xl overflow-hidden flex items-center justify-end p-6 md:p-12">
-          <div className="max-w-xl bg-black/30 md:bg-white/10 md:backdrop-blur-md p-8 rounded-3xl md:border md:border-white/20 md:shadow-2xl text-white">
-            <h2 className="text-3xl md:text-5xl font-caesar-regular mb-4 leading-tight drop-shadow-lg">
-              KITE TRIPS E DOWNWIND
-            </h2>
-            <p className="text-base md:text-lg font-medium leading-relaxed drop-shadow-md">
-              Entre julho e janeiro, os ventos constantes fazem de Jericoacoara
-              um dos melhores lugares do mundo para o kitesurf. Organizamos Kite
-              Trips e downwinds com acompanhamento de profissionais, carro 4x4
-              de apoio e assistência dentro e fora d’água.
-            </p>
+      <div className="container mx-auto px-4 py-16 flex flex-col items-center gap-10 md:gap-16 relative z-10">
+        <div className="w-full flex flex-col lg:block relative rounded-[30px] md:rounded-[50px] shadow-2xl overflow-hidden group">
+          <div className="lg:hidden w-full h-64 sm:h-80 md:h-112.5 bg-[url('./assets/images/KiteTripseDownwind.png')] bg-cover bg-center" />
+
+          <div className="lg:bg-[url('./assets/images/KiteTripseDownwind.png')] bg-cover bg-center w-full min-h-fit lg:min-h-137.5 flex items-center justify-end p-5 sm:p-8 md:p-12 lg:p-16">
+            <div className="w-full lg:max-w-xl bg-custom-blue/80 lg:bg-white/10 lg:backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-[25px] md:rounded-3xl lg:border lg:border-white/20 lg:shadow-2xl text-white">
+              <h2 className="text-[clamp(1.5rem,5vw,3rem)] font-caesar-regular mb-4 leading-tight drop-shadow-lg uppercase">
+                Kite Trips e Downwind
+              </h2>
+              <p className="text-[clamp(0.875rem,2vw,1.125rem)] font-medium leading-relaxed drop-shadow-md">
+                Entre julho e janeiro, os ventos constantes fazem de
+                Jericoacoara um dos melhores lugares do mundo para o kitesurf.
+                Organizamos Kite Trips e downwinds com acompanhamento de
+                profissionais, carro 4x4 de apoio e assistência dentro e fora
+                d’água.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="bg-[url('./assets/images/TransferseLogística.png')] bg-cover bg-center w-full min-h-100 relative rounded-[50px] shadow-2xl overflow-hidden flex items-center justify-end p-6 md:p-12">
-          <div className="max-w-xl bg-black/30 md:bg-white/10 md:backdrop-blur-md p-8 rounded-3xl md:border md:border-white/20 md:shadow-2xl text-white">
-            <h2 className="text-3xl md:text-5xl font-caesar-regular mb-4 leading-tight drop-shadow-lg">
-              TRANSFERS E LOGÍSTICA
-            </h2>
-            <p className="text-base md:text-lg font-medium leading-relaxed drop-shadow-md">
-              Realizamos transfers em veículos 4x4 entre Fortaleza, o Aeroporto
-              Regional de Jericoacoara (JJD) e a vila. Nossa equipe está
-              disponível 24 horas para garantir conforto e segurança do início
-              ao fim da sua viagem
-            </p>
+        <div className="w-full flex flex-col lg:block relative rounded-[30px] md:rounded-[50px] shadow-2xl overflow-hidden group">
+          <div className="lg:hidden w-full h-64 sm:h-80 md:h-112.5 bg-[url('./assets/images/TransferseLogística.png')] bg-cover bg-center" />
+
+          <div className="lg:bg-[url('./assets/images/TransferseLogística.png')] bg-cover bg-center w-full min-h-fit lg:min-h-137.5 flex items-center justify-end p-5 sm:p-8 md:p-12 lg:p-16">
+            <div className="w-full lg:max-w-xl bg-custom-blue/80 lg:bg-white/10 lg:backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-[25px] md:rounded-3xl lg:border lg:border-white/20 lg:shadow-2xl text-white">
+              <h2 className="text-[clamp(1.5rem,5vw,3rem)] font-caesar-regular mb-4 leading-tight drop-shadow-lg uppercase">
+                Transfers e Logística
+              </h2>
+              <p className="text-[clamp(0.875rem,2vw,1.125rem)] font-medium leading-relaxed drop-shadow-md">
+                Realizamos transfers em veículos 4x4 entre Fortaleza, o
+                Aeroporto Regional de Jericoacoara (JJD) e a vila. Nossa equipe
+                está disponível 24 horas para garantir conforto e segurança do
+                início ao fim da sua viagem.
+              </p>
+            </div>
           </div>
         </div>
       </div>

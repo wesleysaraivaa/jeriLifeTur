@@ -7,10 +7,10 @@ export function Contato() {
     <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center bg-[#07356B] pt-32 sm:pt-48 md:pt-64 lg:pt-80 sm:pb-24 md:pb-32 lg:pb-48 relative overflow-hidden flex flex-col items-center">
       <div className="container mx-auto px-4 relative z-10 py-10 sm:py-20">
         <div className="w-full md:w-[65%] lg:w-[55%] xl:w-[50%] bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] sm:rounded-[40px] md:rounded-[50px] p-6 sm:p-10 md:p-12 lg:p-14 xl:p-16 shadow-2xl relative z-10">
-          <h1 className="font-caesar-regular text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-4 sm:mb-6 uppercase leading-[0.9] tracking-tighter text-center md:text-left">
+          <h1 className="font-caesar-regular text-[clamp(2rem,6vw,5rem)] text-white mb-4 sm:mb-6 uppercase leading-[0.9] tracking-tighter text-center md:text-left">
             Pronto para <br className="hidden sm:block" /> embarcar?
           </h1>
-          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 sm:mb-10 md:mb-12 leading-tight max-w-2xl mx-auto md:mx-0 text-center md:text-left font-medium">
+          <p className="text-white text-[clamp(0.875rem,2.5vw,1.875rem)] mb-8 sm:mb-10 md:mb-12 leading-tight max-w-2xl mx-auto md:mx-0 text-center md:text-left font-medium">
             Entre em contato para montar seu roteiro sob medida.{" "}
             <span className="font-bold">
               A Jerilifetur oferece pacotes diários e combinados,
@@ -19,14 +19,14 @@ export function Contato() {
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap justify-center md:justify-start gap-4 sm:gap-3 md:gap-4 lg:gap-6">
-            <button className="bg-white text-custom-blue py-3 sm:py-3.5 md:py-4 px-6 sm:px-5 md:px-8 lg:px-10 rounded-full font-bold flex items-center justify-center gap-2 sm:gap-3 hover:bg-custom-blue-light hover:text-white transition-all duration-300 shadow-xl group text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap">
+            <button className="bg-white text-custom-blue py-3 sm:py-3.5 md:py-4 px-6 sm:px-5 md:px-8 lg:px-10 rounded-full font-bold flex items-center justify-center gap-2 sm:gap-3 hover:bg-custom-blue-light hover:text-white transition-all duration-300 shadow-xl group text-[clamp(0.75rem,2vw,1.25rem)] whitespace-nowrap">
               AGENDAR PASSEIO
               <FontAwesomeIcon
                 icon={faArrowUp}
                 className="rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
               />
             </button>
-            <button className="border-2 border-white/50 text-white py-3 sm:py-3.5 md:py-4 px-6 sm:px-5 md:px-8 lg:px-10 rounded-full font-bold flex items-center justify-center gap-2 sm:gap-3 hover:bg-white hover:text-custom-blue transition-all duration-300 group text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap">
+            <button className="border-2 border-white/50 text-white py-3 sm:py-3.5 md:py-4 px-6 sm:px-5 md:px-8 lg:px-10 rounded-full font-bold flex items-center justify-center gap-2 sm:gap-3 hover:bg-white hover:text-custom-blue transition-all duration-300 group text-[clamp(0.75rem,2vw,1.25rem)] whitespace-nowrap">
               Marcar Kite Trip
               <FontAwesomeIcon
                 icon={faArrowUp}

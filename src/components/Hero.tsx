@@ -16,14 +16,14 @@ export function Hero() {
         <div className="relative top-15 z-20 flex h-full items-center">
           <div className="flex flex-col max-w-2xl md:ml-20 ">
             <div className="flex flex-col md:rounded-3xl p-8 md:backdrop-blur-sm md:border md:border-white/20 md:shadow-2xl">
-              <h1 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-[0.9] text-center md:text-left">
+              <h1 className="text-[clamp(2rem,6vw,4.5rem)] text-white mb-4 sm:mb-6 leading-[0.9] text-center md:text-left">
                 Descubra{" "}
                 <span className="font-caesar-regular">Jericoacoara</span>
                 <br></br>com quem é da casa.
               </h1>
 
               <p
-                className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-5
+                className="text-white text-[clamp(0.875rem,2.5vw,1.5rem)] mt-5
                 mb-8 sm:mb-10 md:mb-12 leading-tight max-w-2xl mx-auto md:mx-0 text-center md:text-left font-medium"
               >
                 A Jerilifetur é uma empresa 100% nativa, formada por guias
