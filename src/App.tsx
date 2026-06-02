@@ -11,10 +11,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <TourLeste />
-      <TourOeste />
-      <Passeios />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="tour-leste">
+        <TourLeste />
+      </section>
+      <section id="tour-oeste">
+        <TourOeste />
+      </section>
+      <section id="passeios">
+        <Passeios />
+      </section>
       
       <div className="relative z-20 flex justify-center -my-4">
         <div className="text-white font-medium whitespace-nowrap overflow-hidden font-caesar-regular text-2xl">
@@ -24,7 +32,9 @@ function App() {
         </div>
       </div>
       
-      <Sobre />
+      <section id="sobre">
+        <Sobre />
+      </section>
 
       <div className="relative z-30 flex justify-center -my-4">
         <div className="text-white font-medium whitespace-nowrap overflow-hidden font-caesar-regular text-2xl">
@@ -34,8 +44,12 @@ function App() {
         </div>
       </div>
 
-      <SobreJeri />
-      <Contato />
+      <section id="sobre-jeri">
+        <SobreJeri />
+      </section>
+      <section id="contato">
+        <Contato />
+      </section>
     </>
   );
 }

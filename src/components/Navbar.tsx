@@ -11,32 +11,55 @@ import {
 
 export default function Navbar() {
   const itens: NavItemInterface[] = [
-    { name: "Home", href: "/home" },
-    { name: "Passeios", href: "/trips" },
-    { name: "Rotas", href: "/rotas" },
-    { name: "Kittrip", href: "/kittrip" },
+    { name: "Home", href: "#home" },
+    { name: "Passeios", href: "#passeios" },
+    { name: "Tour Leste", href: "#tour-leste" },
+    { name: "Tour Oeste", href: "#tour-oeste" },
+    { name: "Sobre", href: "#sobre" },
+    { name: "Contato", href: "#contato" },
   ];
 
   const [open, setOpen] = useState(false);
+
+  const handleLinkClick = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setOpen(false); // Fecha o menu quando clica em um link
+  };
 
   return (
     <header className="fixed md:inset-x-10 inset-x-4 top-3 z-50 md:px-4">
       <nav className=" md:rounded-full rounded-2xl bg-custom-white/90 shadow-2xl backdrop-blur-lg border border-white/20">
         <div className="flex items-center justify-between px-4 sm:px-6 py-2 sm:py-3">
           <div>
-            <a href="/">
+            <a href="#home" onClick={(e) => { e.preventDefault(); handleLinkClick("#home"); }}>
               <img src={logo} alt="Logo" className="w-28 sm:w-32 md:w-40" />
             </a>
           </div>
           <div className="hidden md:block">
             <ul className="flex items-center gap-5 list-none">
               {itens.map((item, index) => (
-                <NavItem key={index} name={item.name} href={item.href} />
+                <li key={index}>
+                  <a 
+                    href={item.href} 
+                    onClick={(e) => { 
+                      e.preventDefault(); 
+                      handleLinkClick(item.href); 
+                    }}
+                  >
+                    <NavItem name={item.name} href={item.href} />
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
           <div className=" items-center gap-6 hidden md:flex">
-            <button className="group inline-flex items-center gap-3 rounded-full bg-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 shadow-xl transition-all duration-300 hover:scale-105">
+            <button 
+              className="group inline-flex items-center gap-3 rounded-full bg-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 shadow-xl transition-all duration-300 hover:scale-105"
+              onClick={(e) => { e.preventDefault(); handleLinkClick("#contato"); }}
+            >
               <span className="text-custom-blue font-alan-sans-medium text-[clamp(0.75rem,1.5vw,1rem)]">
                 Agendar Passeio
               </span>
@@ -46,13 +69,13 @@ export default function Navbar() {
               </div>
             </button>
           </div>
-          <div className="md:hidden text-custom-blue" onClick={() => setOpen(!open)}>
+          <div className="md:hidden text-custom-blue cursor-pointer" onClick={() => setOpen(!open)}>
             <FontAwesomeIcon icon={faBarsStaggered} className="text-xl" />
           </div>
         </div>
       </nav>
 
-      <ResponsiveMenu open={open} />
+      <ResponsiveMenu open={open} handleLinkClick={handleLinkClick} />
     </header>
   );
 }
