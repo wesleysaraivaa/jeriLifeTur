@@ -5,7 +5,7 @@ import PasseiosExclusivos from "../assets/images/Passeios-Exclusivos.png";
 export function Sobre() {
   return (
     <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center py-16 ">
-      <h1 className="font-caesar-regular text-custom-blue text-[clamp(2rem,6vw,5rem)] text-center mt-12 mb-20 uppercase">
+      <h1 className="font-caesar-regular text-custom-blue text-[clamp(2.5rem,6vw,5rem)] text-center mt-12 mb-20 uppercase">
         Por que Jerilifetur?
       </h1>
 
@@ -17,8 +17,8 @@ export function Sobre() {
               className="absolute inset-0 w-full h-full object-cover"
               alt="Equipe Nativa"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-custom-blue via-custom-blue/40 to-transparent flex flex-col justify-end p-8 md:p-12 text-center">
-              <h2 className="font-caesar-regular text-white text-[clamp(2rem,5vw,3.75rem)] mb-2 uppercase">
+            <div className="absolute inset-0 bg-linear-to-t from-custom-blue via-custom-blue/20 to-transparent flex flex-col justify-end p-8 md:p-12 text-center">
+              <h2 className="font-caesar-regular text-white text-[clamp(2.2rem,5vw,3.75rem)] mb-2 uppercase">
                 Equipe nativa
               </h2>
               <p className="text-white text-[clamp(0.875rem,2vw,1.25rem)] font-medium">
@@ -35,7 +35,7 @@ export function Sobre() {
               alt="Atendimento Completo"
             />
             <div className="absolute inset-0 bg-linear-to-t from-custom-blue via-custom-blue/40 to-transparent flex flex-col justify-end p-8 md:p-12 text-center">
-              <h2 className="font-caesar-regular text-white text-[clamp(2rem,5vw,3.75rem)] mb-2 uppercase">
+              <h2 className="font-caesar-regular text-white text-[clamp(2.2rem,5vw,3.75rem)] mb-2 uppercase">
                 Atendimento completo
               </h2>
               <p className="text-white text-[clamp(0.875rem,2vw,1.25rem)] font-medium">

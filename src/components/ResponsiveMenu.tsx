@@ -13,12 +13,13 @@ export default function ResponsiveMenu({ open }: ResponsiveMenuProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.2 }}
+          className="mt-3"
         >
-          <ul className="flex flex-col justify-center items-center gap-10 py-4 rounded-3xl bg-custom-white/95 shadow-2xl backdrop-blur-md border border-slate-200">
+          <ul className="flex flex-col justify-center items-center gap-6 py-6 px-4 rounded-2xl bg-custom-white/90 shadow-2xl backdrop-blur-lg border border-white/20">
             <li>
               <a
                 href="/home"
-                className="text-lg font-bold text-custom-blue-light"
+                className="text-xl font-bold text-custom-blue hover:text-custom-blue-light transition-colors"
               >
                 Home
               </a>
@@ -26,7 +27,7 @@ export default function ResponsiveMenu({ open }: ResponsiveMenuProps) {
             <li>
               <a
                 href="/trips"
-                className="text-lg font-bold text-custom-blue-light"
+                className="text-xl font-bold text-custom-blue hover:text-custom-blue-light transition-colors"
               >
                 Passeios
               </a>
@@ -34,7 +35,7 @@ export default function ResponsiveMenu({ open }: ResponsiveMenuProps) {
             <li>
               <a
                 href="/rotas"
-                className="text-lg font-bold text-custom-blue-light"
+                className="text-xl font-bold text-custom-blue hover:text-custom-blue-light transition-colors"
               >
                 Rotas
               </a>
@@ -42,7 +43,7 @@ export default function ResponsiveMenu({ open }: ResponsiveMenuProps) {
             <li>
               <a
                 href="/kittrip"
-                className="text-lg font-bold text-custom-blue-light"
+                className="text-xl font-bold text-custom-blue hover:text-custom-blue-light transition-colors"
               >
                 Kittrip
               </a>

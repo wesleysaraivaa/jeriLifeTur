@@ -1,7 +1,7 @@
 import PLACASHERO from "../assets/images/PLACAS-HERO.png";
 import BUGGYCASALHERO from "../assets/images/BUGGY-CASAL-HERO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export function Hero() {
   return (
@@ -16,7 +16,7 @@ export function Hero() {
         <div className="relative top-15 z-20 flex h-full items-center">
           <div className="flex flex-col max-w-2xl md:ml-20 ">
             <div className="flex flex-col md:rounded-3xl p-8 md:backdrop-blur-sm md:border md:border-white/20 md:shadow-2xl">
-              <h1 className="text-[clamp(2rem,6vw,4.5rem)] text-white mb-4 sm:mb-6 leading-[0.9] text-center md:text-left">
+              <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] text-white mb-4 sm:mb-6 leading-[0.9] text-center md:text-left">
                 Descubra{" "}
                 <span className="font-caesar-regular">Jericoacoara</span>
                 <br></br>com quem é da casa.
@@ -33,31 +33,27 @@ export function Hero() {
               </p>
             </div>
             <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-normal gap-3 sm:gap-4">
-              <button
-                className="w-fit bg-white text-custom-blue py-2 sm:py-2.5 md:py-3 px-5 sm:px-6 md:px-8 rounded-full font-bold flex items-center 
-              justify-center gap-2 sm:gap-3 hover:bg-custom-blue-light hover:text-white transition-all duration-300 shadow-xl group text-xs sm:text-sm md:text-base lg:text-lg whitespace-nowrap"
-              >
-                <span className="pl-2 sm:pl-3 text-black font-alan-sans-medium">
-                  Agendar Passeio
-                </span>
 
-                <div className="grid h-7 w-7 sm:h-8 sm:w-8 place-items-center rounded-full bg-custom-blue-light text-white text-xs sm:text-sm">
-                  <FontAwesomeIcon icon={faArrowRight} />
+              <button className="bg-white text-custom-blue py-3 sm:py-3.5 md:py-4 px-6 sm:px-5 md:px-8 lg:px-10 rounded-full font-bold flex items-center justify-center gap-2 sm:gap-3 hover:bg-custom-blue-light hover:text-white transition-all duration-300 shadow-xl group text-[clamp(0.75rem,2vw,1.25rem)] whitespace-nowrap">
+                Agendar Passeio
+                <div className="grid h-7 w-7 sm:h-8 sm:w-8 place-items-center rounded-full bg-custom-blue-light text-white group-hover:bg-white group-hover:text-custom-blue transition-all duration-300">
+                  <FontAwesomeIcon
+                    icon={faArrowUp}
+                    className="rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                  />
                 </div>
               </button>
 
-              <button
-                className="w-fit text-white border border-white py-2 sm:py-2.5 md:py-3 px-5 sm:px-6 md:px-8 rounded-full font-bold flex items-center 
-              justify-center gap-2 sm:gap-3 hover:bg-custom-blue-light hover:text-white transition-all duration-300 shadow-xl group text-xs sm:text-sm md:text-base lg:text-lg whitespace-nowrap"
-              >
-                <span className="pl-2 sm:pl-3 font-alan-sans-medium">
-                  Nossos Roteiros
-                </span>
-
-                <div className="grid h-7 w-7 sm:h-8 sm:w-8 place-items-center rounded-full text-white text-xs sm:text-sm">
-                  <FontAwesomeIcon icon={faArrowRight} />
+              <button className="text-white border border-white bg-white/10 backdrop-blur-sm py-3 sm:py-3.5 md:py-4 px-6 sm:px-5 md:px-8 lg:px-10 rounded-full font-bold flex items-center justify-center gap-2 sm:gap-3 hover:bg-custom-blue-light hover:text-white transition-all duration-300 shadow-xl group text-[clamp(0.75rem,2vw,1.25rem)] whitespace-nowrap">
+                Nossos Roteiros
+                <div className="grid h-7 w-7 sm:h-8 sm:w-8 place-items-center rounded-full text-white group-hover:bg-custom-blue-light transition-all duration-300">
+                  <FontAwesomeIcon
+                    icon={faArrowUp}
+                    className="rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                  />
                 </div>
               </button>
+
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ export function Contato() {
     <section className="bg-[url('./assets/images/FUNDO-PASSEIOS.png')] bg-cover bg-center bg-[#07356B] pt-32 sm:pt-48 md:pt-64 lg:pt-80 sm:pb-24 md:pb-32 lg:pb-48 relative overflow-hidden flex flex-col items-center">
       <div className="container mx-auto px-4 relative z-10 py-10 sm:py-20">
         <div className="w-full md:w-[65%] lg:w-[55%] xl:w-[50%] bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] sm:rounded-[40px] md:rounded-[50px] p-6 sm:p-10 md:p-12 lg:p-14 xl:p-16 shadow-2xl relative z-10">
-          <h1 className="font-caesar-regular text-[clamp(2rem,6vw,5rem)] text-white mb-4 sm:mb-6 uppercase leading-[0.9] tracking-tighter text-center md:text-left">
+          <h1 className="font-caesar-regular text-[clamp(2.5rem,6vw,5rem)] text-white mb-4 sm:mb-6 uppercase leading-[0.9] tracking-tighter text-center md:text-left">
             Pronto para <br className="hidden sm:block" /> embarcar?
           </h1>
           <p className="text-white text-[clamp(0.875rem,2.5vw,1.875rem)] mb-8 sm:mb-10 md:mb-12 leading-tight max-w-2xl mx-auto md:mx-0 text-center md:text-left font-medium">
